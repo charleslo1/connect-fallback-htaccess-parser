@@ -45,8 +45,8 @@ rewrite ^\/users\/\d+\/articles$      /public/html/articles.html       break;
 
 # other rule
 rewrite ^.*\.(css|js|jpg|gif|png|woff|ttf|mp3|xls) $0                  break;
-rewrite ^\/$                      /public/html/index.html              break;
-rewrite ^\/([^\/]*)?              /public/html/$1.html                 break;
+rewrite ^\/$                          /public/html/index.html          break;
+rewrite ^\/([^\/]*)?                  /public/html/$1.html             break;
 
 # end nginx rewrite rule
 
