@@ -1,4 +1,4 @@
-import HtaccessParser from './src/HtaccessParser'
+var HtaccessParser = require('./src/HtaccessParser')
 
 // export
-export default new HtaccessParser()
+module.exports = new HtaccessParser()
