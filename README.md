@@ -16,6 +16,7 @@ npm install connect-fallback-htaccess-parser
 
 ```
 import express from 'express'
+import path from 'path'
 import fallback from 'connect-history-api-fallback'
 import htaccessParser from 'connect-history-api-fallback'
 
@@ -37,15 +38,15 @@ app.use(fallback({
 # nginx rewrite rule
 
 # user module rule
-rewrite ^\/ucenter$                   /public/html/ucenter.html           break;
+rewrite ^\/ucenter$                   /public/html/ucenter.html        break;
 rewrite ^\/user\/login$               /public/html/login.html          break;
 rewrite ^\/users\/\d+$                /public/html/user-detail.html    break;
 rewrite ^\/users\/\d+\/articles$      /public/html/articles.html       break;
 
 # other rule
-rewrite ^.*\.(css|js|jpg|gif|png|woff|ttf|mp3|xls) $0                       break;
-rewrite ^\/$                      /statics/txteditor/app-article.html       break;
-rewrite ^\/([^\/]*)?              /statics/txteditor/$1.html                break;
+rewrite ^.*\.(css|js|jpg|gif|png|woff|ttf|mp3|xls) $0                  break;
+rewrite ^\/$                      /public/html/index.html              break;
+rewrite ^\/([^\/]*)?              /public/html/$1.html                 break;
 
 # end nginx rewrite rule
 
