@@ -1,6 +1,6 @@
 # connect-fallback-htaccess-parser
 
-a simple htaccess parser for connect-history-api-fallback
+a simple htaccess parser for [connect-history-api-fallback](https://github.com/bripkens/connect-history-api-fallback)
 
 # install
 

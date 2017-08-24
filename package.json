@@ -1,6 +1,6 @@
 {
   "name": "connect-fallback-htaccess-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "htaccess parser for connect-history-api-fallback",
   "main": "index.js",
   "scripts": {
